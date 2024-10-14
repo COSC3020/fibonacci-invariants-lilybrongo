@@ -17,5 +17,5 @@ function fib(n) {
             
         }
     }
-    return n;
+    return array;
 }

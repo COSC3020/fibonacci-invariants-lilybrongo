@@ -20,7 +20,7 @@ testing code that uses [jsverify](https://jsverify.github.io/) in
 What is a good invariant for your recursive implementation of `fib()`
 i.e. something that is always true at the beginning of the recursive call?
 
-I think a good invariant for my recursive implementation of 'fib()' would be using the two previous fibonnaci elements, which would be $(i-2) and (i-1)$. At the start of teh loop, the array conatians fib(0) and fib(1). These satisfy the base cases for the sequence. As the loop continues to iterate through, the invariant shows that for each index i, from 2 to n, the elements of fib(i-2) and fib(i-1) are represented. Since the definition of the fibonacci sequence is the sum of the two preceding values, during each iteration fib(i) is calculated using this method. And after seeing this pattern, the invariant remains applicable to this implementation.  
+I think a good invariant for my recursive implementation of 'fib()' would be using the two previous fibonnaci elements, which would be (i-2) and (i-1). At the start of the loop, the array conatians fib(0) and fib(1). These satisfy the base cases for the sequence. As the loop continues to iterate through, the invariant shows that for each index i, from 2 to n, the elements of fib(i-2) and fib(i-1) are represented. Since the definition of the fibonacci sequence is the sum of the two preceding values, during each iteration fib(i) is calculated using this method. And after seeing this pattern, the invariant remains applicable to this implementation.  
 
 Hint: Think about what the "state of the world" is here and what you can say
 about it at the start of each recursive call. Your invariant must say something
